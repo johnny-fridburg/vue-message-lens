@@ -1,0 +1,46 @@
+{
+  "name": "vue-message-lens",
+  "displayName": "Vue Message Lens \u2014 research demo",
+  "description": "Read-only inspection of component-local Vue JSON translation messages.",
+  "publisher": "indie-lab-local",
+  "version": "0.0.2",
+  "private": true,
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "main": "extension.cjs",
+  "activationEvents": [
+    "onLanguage:vue"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "extensions": [
+          ".vue"
+        ],
+        "aliases": [
+          "Vue"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test tests/core.test.cjs"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "3.5.28",
+    "jsonc-parser": "3.3.1",
+    "@babel/parser": "7.29.9",
+    "@vue/compiler-dom": "3.5.28"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnny-fridburg/vue-message-lens.git"
+  },
+  "homepage": "https://github.com/johnny-fridburg/vue-message-lens#readme",
+  "bugs": {
+    "url": "https://github.com/johnny-fridburg/vue-message-lens/issues"
+  }
+}

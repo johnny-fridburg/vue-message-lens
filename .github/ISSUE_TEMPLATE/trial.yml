@@ -1,0 +1,26 @@
+name: Trial result
+description: Share a sanitized comparison, including when an existing tool works better.
+title: "Trial: "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Use invented translations and sanitized snippets; do not include private code, credentials, or customer data."
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup
+      description: VS Code, Vue, vue-i18n and existing editor-extension versions; local external or inline JSON?
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected vs observed
+      description: Which text appeared, and where did Go to Definition take you? A tiny sanitized example helps.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Existing alternatives
+      description: Does another extension or moving messages inline/globally solve this acceptably? Would you keep using this demo?
